@@ -1,0 +1,32 @@
+# NAME: Cloudflare-Services-Proxy
+# DESC: Cloudflare 自有服务域名分流规则；建议绑定到 Proxy 策略组
+# FORMAT: Loon
+# NOTE: 不包含 Cloudflare 共享 CDN 的 IP 网段，避免将使用 Cloudflare CDN 的普通网站全部强制代理。
+# 使用前请确认你的 Loon 策略组名称为 Proxy；若名称不同，请全局替换为实际策略组名。
+
+DOMAIN-SUFFIX,cloudflare.com,Proxy
+DOMAIN-SUFFIX,cloudflareaccess.com,Proxy
+DOMAIN-SUFFIX,cloudflareapps.com,Proxy
+DOMAIN-SUFFIX,cloudflareclient.com,Proxy
+DOMAIN-SUFFIX,cloudflare-dns.com,Proxy
+DOMAIN-SUFFIX,cloudflare-quic.com,Proxy
+DOMAIN-SUFFIX,cloudflare-ipfs.com,Proxy
+DOMAIN-SUFFIX,cf-ipfs.com,Proxy
+DOMAIN-SUFFIX,cloudflareinsights.com,Proxy
+DOMAIN-SUFFIX,cloudflarestream.com,Proxy
+DOMAIN-SUFFIX,cloudflarestorage.com,Proxy
+DOMAIN-SUFFIX,cloudflarestoragegw.com,Proxy
+DOMAIN-SUFFIX,cloudflarestatus.com,Proxy
+DOMAIN-SUFFIX,cloudflarepreview.com,Proxy
+DOMAIN-SUFFIX,cloudflareprod.com,Proxy
+DOMAIN-SUFFIX,cloudflareresolve.com,Proxy
+DOMAIN-SUFFIX,cloudflaressl.com,Proxy
+DOMAIN-SUFFIX,cloudflarebolt.com,Proxy
+DOMAIN-SUFFIX,cloudflarecn.net,Proxy
+DOMAIN-SUFFIX,cloudflare-cn.com,Proxy
+DOMAIN-SUFFIX,one.one.one,Proxy
+DOMAIN-SUFFIX,pages.dev,Proxy
+DOMAIN-SUFFIX,workers.dev,Proxy
+DOMAIN-SUFFIX,trycloudflare.com,Proxy
+DOMAIN-SUFFIX,videodelivery.net,Proxy
+DOMAIN-SUFFIX,warp.plus,Proxy
